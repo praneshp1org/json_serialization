@@ -25,6 +25,7 @@ class _HomePageState extends State<HomePage> {
       comment = data.map((json) => Comment.fromJson(json)).toList();
       isLoading = false;
     });
+    return comment;
   }
 
   @override

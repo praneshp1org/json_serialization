@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:json_serialization/pages/home_page.dart';
+import 'package:json_serialization/pages/home_page2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: HomePage2(),
     );
   }
 }

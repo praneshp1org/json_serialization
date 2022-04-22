@@ -1,5 +1,11 @@
 class User {
   var name, email, username;
+  Address address;
+  User.fromJson(Map<String, dynamic> json)
+      : name = json['name'],
+        email = json['email'],
+        username = json['username'],
+        address = Address.fromJson(json['address']);
 }
 
 class Address {
