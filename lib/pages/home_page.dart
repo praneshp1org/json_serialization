@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('JSON serialization'),
       ),
+      body: Center(),
     );
   }
 }
