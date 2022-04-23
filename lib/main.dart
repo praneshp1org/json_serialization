@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:json_serialization/pages/YTJSON02.dart';
 import 'package:json_serialization/pages/home_page.dart';
 import 'package:json_serialization/pages/home_page2.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage2(),
+      home: YTJSON02(),
     );
   }
 }
