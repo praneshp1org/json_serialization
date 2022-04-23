@@ -43,27 +43,32 @@ class _CJSONState extends State<CJSON> {
             ? Center(
                 child: LinearProgressIndicator(),
               )
-            : ListView.builder(
-                itemCount: userList.length,
-                itemBuilder: (context, index) {
-                  return Card(
-                    elevation: 5,
-                    child: ListTile(
-                      title: Text(userList[index].username),
-                      subtitle: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(userList[index].email),
-                          Text(userList[index].company.name),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(userList[index].company.catchPhrase)
-                        ],
+            : Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListView.builder(
+                  itemCount: userList.length,
+                  itemBuilder: (context, index) {
+                    return Card(
+                      elevation: 5,
+                      child: ListTile(
+                        title: Text("Username: " + userList[index].username),
+                        subtitle: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Email: " + userList[index].email),
+                            Text("Company Name: " +
+                                userList[index].company.name),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text("Catchphrase: " +
+                                userList[index].company.catchPhrase)
+                          ],
+                        ),
                       ),
-                    ),
-                  );
-                },
+                    );
+                  },
+                ),
               ));
   }
 }
