@@ -4,5 +4,6 @@ class Municipality {
   Municipality.fromJson(Map<String, dynamic> json)
       : title_en = json['title_en'],
         type = json['type'],
+        bbox = json['bbox'],
         title_ne = json['title_ne'];
 }
