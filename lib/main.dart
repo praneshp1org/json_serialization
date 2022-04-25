@@ -5,6 +5,7 @@ import 'package:json_serialization/pages/YTJSON02.dart';
 import 'package:json_serialization/pages/district_page.dart';
 import 'package:json_serialization/pages/home_page.dart';
 import 'package:json_serialization/pages/home_page2.dart';
+import 'package:json_serialization/pages/random_page.dart';
 // import 'package:json_serialization/pages/test_page.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MPage(),
+      home: RPage(),
     );
   }
 }
